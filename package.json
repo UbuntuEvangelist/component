@@ -31,7 +31,8 @@
     "win-fork": "~1.1.1",
     "debug": "*",
     "co": "^3.0.0",
-    "tiny-lr-fork": "0.0.5"
+    "tiny-lr-fork": "0.0.5",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "mocha": "1",
@@ -57,6 +58,9 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "make test"
-  }
+    "test": "make test",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
