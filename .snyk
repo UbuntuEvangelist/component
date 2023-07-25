@@ -1,0 +1,30 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:semver:20150403':
+    - component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-flatten > semver
+    - component-outdated2 > component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-outdated2 > component-flatten > semver
+    - component-pin > component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-pin > component-flatten > semver
+    - component-resolver > component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-resolver > component-flatten > semver
+    - component-updater > component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-updater > component-flatten > semver
+    - component-build > component-builder > component-flatten > semver:
+        patched: '2023-07-25T22:12:20.923Z'
+        id: 'npm:semver:20150403'
+        path: component-build > component-builder > component-flatten > semver
